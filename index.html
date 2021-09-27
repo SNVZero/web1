@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" style=" overflow-x: hidden">
 
 	<head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	</head>
 
 
-	<body style="margin: 0;">
-	<div ><div class="ored"><header > <img src="img/C.jpg	" class="imgred"alt="index" ><div class="textred">I havent come up with a name yet </div></header></div>
+	<body style="margin: 0;  overflow-x: hidden" class="container">
+		<div class="item-1">
+		<div class="osn"><header > <img src="img/C.jpg	" class="imgred"alt="index" ><div class="textred">I havent come up with a name yet </div></header></div>
+		</div>
 
-	   <div class="saitbar">
-		   <div class="osn">
-		<ul class="menu-4">
-		  <li><a href="#">Оглавление</a>
-			<ul class="podmenu">
-			  <li><a href="index.html">Главная страница</a></li>
-			  <li><a href="https://kubsu.ru/" target="_blank">Страница Вуза</a></li>
-			  <li><a href="https://snvzero.github.io/test/" target="_blank">Тестовый сайт</a></li>
+		<div class="item-2">
+		<div class="osn">
+		<div class="saitbar">
+			<ul class="menu-4">
+			<li><a href="#">Оглавление</a>
+				<ul class="podmenu">
+				<li><a href="index.html">Главная страница</a></li>
+				<li><a href="https://kubsu.ru/" target="_blank">Страница Вуза</a></li>
+				<li><a href="https://snvzero.github.io/test/" target="_blank">Тестовый сайт</a></li>
+				</ul>
+			</li>
+			<li><a href="#form">Форма</a></li>
+			<li><a href="#Table">Таблица</a></li>
 			</ul>
-		  </li>
-		  <li><a href="#form">Форма</a></li>
-		  <li><a href="#Table">Таблица</a></li>
-		</ul>
+		</div>
+		</div>
 	</div>
-	   </div>
 
+	<div class="item-3">
 		<div class="osn">
 			<ol>
 				<li><a href="http://example.com">ссылка 1</a></li>
@@ -65,9 +71,9 @@
 				<li><a href="index.html">ссылка 20</a></li>
 				<li><a href="about/index.html">ссылка 21</a></li>
 			</ol></div>
+	</div>
 
-
-
+				<div class="item-4">
 				<table class="osn">
 					<tr>
 						<td rowspan="2">Продукция</td>
@@ -78,31 +84,31 @@
 						<td>c 01.01 по 31.01</td>
 						<td>c 01.01.2015</td>
 					</tr>
-					<tr>
-						<td>Дизельное топливо</td>
+					<tr style="background-color: orange;" >
+						<td >Дизельное топливо</td>
 						<td>3450 руб. за 1 тонну</td>
 						<td>4150 руб. за 1 тонну</td>
 						<td>3950 руб. за 1 тонну</td>
 					</tr>
 				</table>
+			</div>
 
+		<div class="item-5">
+			<div class="osn">
+			<h1 id="form">Форма</h1>
+					<form action="/"
+				method="POST">
 
-		<div class="osn">
-		<h1 id="form">Форма</h1>
-				<form action="/"
-			  method="POST">
+					<p>Имя:<br />
+					<input name="Name selection"
+					value="Ваше имя" />
+					<br /></p>
 
-				<p>Имя:<br />
-				<input name="Name selection"
-				  value="начальное значение" />
-			    <br /></p>
-
-				<p>Текстовое поле email:<br />
-				<input name="imput-email"
-				  value="test@example.com"
-				  type="email" />
-			    <br /></p>
-
+					<p>Текстовое поле email:<br />
+					<input name="imput-email"
+					value="test@example.com"
+					type="email" />
+					<br /></p>
 
 				<p>Дата рождения:<br />
 				<input name="Data imput"
@@ -150,19 +156,20 @@
 
 
 				<p>Биография:<br/>
-				<textarea name="Biography">начальное значение</textarea>
+				<textarea name="Biography">Ваша Биография</textarea>
 			  <br /></p>
 
 
 			  <p>Соглашения:<br/>
-			  <label><input type="checkbox"
-				name="check"/>
-				C контрактом ознакомлен<br/></p>
+			  <label><input type="checkbox" name="check"/>C контрактом ознакомлен<br/></p>
 
 			  <p><input type="submit" value="Отправить"/>
-			  </form></p></div> </div>
+			  </form></p></div>
+		 </div>
 
+			<div class="item-6">
 			  <div class="footer" ><footer>(с) Никита Симаков </footer></div>
+			</div>
 	</body>
 
 </html>
